@@ -1,0 +1,37 @@
+{
+  "quadrilha_A": {
+    "clientes": [
+      "Liam Casa Grande",
+      "Dom Vasconcelos",
+      "Luiz Henrique Barros",
+      "Benício Cavalcanti",
+      "Stella Teixeira",
+      "Gabriela Marques"
+    ],
+    "contas": [
+      "CT-0161",
+      "CT-0162",
+      "CT-0163",
+      "CT-0164",
+      "CT-0165",
+      "CT-0166"
+    ],
+    "conta_mula": "CT-0162",
+    "vitimas_do_golpe": 14,
+    "fracionamento": "CT-0165 -> CT-0161 (6 Pix entre R$ 9.100 e R$ 9.950)",
+    "ciclo_lavagem": "CT-0161 -> CT-0163 -> CT-0164 -> CT-0166 -> CT-0161"
+  },
+  "grupo_B": {
+    "clientes": [
+      "Clarice Castro",
+      "Thales da Costa",
+      "Arthur Gabriel Rios"
+    ],
+    "contas": [
+      "CT-0167",
+      "CT-0168",
+      "CT-0169"
+    ],
+    "ciclo_lavagem": "CT-0167 -> CT-0168 -> CT-0169 -> CT-0167"
+  }
+}

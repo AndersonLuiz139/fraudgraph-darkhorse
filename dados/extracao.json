@@ -1,0 +1,946 @@
+{
+  "estatisticas": {
+    "extrator": "Regras (regex + dicionário)",
+    "documentos": 26,
+    "mencoes": 57,
+    "resolvidas": 57,
+    "nao_resolvidas": 0,
+    "grafias_diferentes_de_pessoas": 14,
+    "pessoas_canonicas": 12,
+    "relacoes_extraidas": 14
+  },
+  "documentos": [
+    {
+      "id": "DOC-001",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0009",
+      "data": "2026-10-10",
+      "titulo": "Relato de golpe - Bruno Leão",
+      "texto": "Caí no golpe do falso funcionário. O contato veio pelo WhatsApp 77982329832. Me pediram um Pix de R$ 989,85 para regularizar meu cadastro e o recebedor apareceu como D. Vasconcelos, CT-0162. Peço a devolução pelo MED.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "D. Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 0.95,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "77982329832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0009",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 989.85,
+          "data": "2026-10-10",
+          "doc": "DOC-001"
+        }
+      ],
+      "valores": [
+        989.85
+      ]
+    },
+    {
+      "id": "DOC-002",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0031",
+      "data": "2026-10-10",
+      "titulo": "Relato de golpe - Matheus Mendes",
+      "texto": "Anunciei um celular na internet e o suposto comprador, que usava o telefone 77 982329832, me convenceu a fazer um Pix de R$ 3.867,75 como 'taxa de verificação'. O dinheiro foi para D. Vasconcelos (CT0162).",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "D. Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 0.95,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "77 982329832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0031",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 3867.75,
+          "data": "2026-10-10",
+          "doc": "DOC-002"
+        }
+      ],
+      "valores": [
+        3867.75
+      ]
+    },
+    {
+      "id": "DOC-003",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0088",
+      "data": "2026-10-10",
+      "titulo": "Relato de golpe - Isaque Monteiro",
+      "texto": "Caí no golpe do falso funcionário. O contato veio pelo WhatsApp (77) 98232-9832. Me pediram um Pix de R$ 4.280,81 para regularizar meu cadastro e o recebedor apareceu como DOM VASCONCELOS, CT-0162. Peço a devolução pelo MED.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "DOM VASCONCELOS",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "(77) 98232-9832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0088",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 4280.81,
+          "data": "2026-10-10",
+          "doc": "DOC-003"
+        }
+      ],
+      "valores": [
+        4280.81
+      ]
+    },
+    {
+      "id": "DOC-004",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0089",
+      "data": "2026-10-10",
+      "titulo": "Relato de golpe - Daniela da Mota",
+      "texto": "Caí no golpe do falso funcionário. O contato veio pelo WhatsApp 77 982329832. Me pediram um Pix de R$ 4.404,43 para regularizar meu cadastro e o recebedor apareceu como D. Vasconcelos, conta 0162. Peço a devolução pelo MED.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "D. Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 0.95,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "77 982329832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0089",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 4404.43,
+          "data": "2026-10-10",
+          "doc": "DOC-004"
+        }
+      ],
+      "valores": [
+        4404.43
+      ]
+    },
+    {
+      "id": "DOC-005",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0124",
+      "data": "2026-10-10",
+      "titulo": "Relato de golpe - Sra. Valentina Câmara",
+      "texto": "Recebi uma ligação do número (77) 98232-9832 de uma pessoa dizendo ser da central de segurança do banco. Ela falou que minha conta tinha sido invadida e que eu precisava transferir o saldo para uma conta segura. Fiz um Pix de R$ 2.177,40 para a conta 0162, em nome de D. Vasconcelos. Depois percebi que era golpe.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "D. Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 0.95,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "(77) 98232-9832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0124",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 2177.4,
+          "data": "2026-10-10",
+          "doc": "DOC-005"
+        }
+      ],
+      "valores": [
+        2177.4
+      ]
+    },
+    {
+      "id": "DOC-006",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0140",
+      "data": "2026-10-10",
+      "titulo": "Relato de golpe - Maria Fernanda Pinto",
+      "texto": "Caí no golpe do falso funcionário. O contato veio pelo WhatsApp 77982329832. Me pediram um Pix de R$ 1.225,43 para regularizar meu cadastro e o recebedor apareceu como Dom Vasconcelos, CT0162. Peço a devolução pelo MED.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Dom Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "77982329832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0140",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 1225.43,
+          "data": "2026-10-10",
+          "doc": "DOC-006"
+        }
+      ],
+      "valores": [
+        1225.43
+      ]
+    },
+    {
+      "id": "DOC-007",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0002",
+      "data": "2026-10-10",
+      "titulo": "Relato de golpe - Zoe Campos",
+      "texto": "Recebi uma ligação do número +55 77 98232 9832 de uma pessoa dizendo ser da central de segurança do banco. Ela falou que minha conta tinha sido invadida e que eu precisava transferir o saldo para uma conta segura. Fiz um Pix de R$ 4.565,41 para a CT-0162, em nome de D. Vasconcelos. Depois percebi que era golpe.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "D. Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 0.95,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "+55 77 98232 9832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0002",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 4565.41,
+          "data": "2026-10-10",
+          "doc": "DOC-007"
+        }
+      ],
+      "valores": [
+        4565.41
+      ]
+    },
+    {
+      "id": "DOC-008",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0041",
+      "data": "2026-10-10",
+      "titulo": "Relato de golpe - Natália Sales",
+      "texto": "Recebi uma ligação do número 77 982329832 de uma pessoa dizendo ser da central de segurança do banco. Ela falou que minha conta tinha sido invadida e que eu precisava transferir o saldo para uma conta segura. Fiz um Pix de R$ 1.967,30 para a CT0162, em nome de DOM VASCONCELOS. Depois percebi que era golpe.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "DOM VASCONCELOS",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "77 982329832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0041",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 1967.3,
+          "data": "2026-10-10",
+          "doc": "DOC-008"
+        }
+      ],
+      "valores": [
+        1967.3
+      ]
+    },
+    {
+      "id": "DOC-009",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0134",
+      "data": "2026-10-11",
+      "titulo": "Relato de golpe - Ana Carolina Viana",
+      "texto": "Anunciei um celular na internet e o suposto comprador, que usava o telefone (77) 98232-9832, me convenceu a fazer um Pix de R$ 4.617,59 como 'taxa de verificação'. O dinheiro foi para D. Vasconcelos (conta nº 0162).",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "D. Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 0.95,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "(77) 98232-9832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0134",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 4617.59,
+          "data": "2026-10-11",
+          "doc": "DOC-009"
+        }
+      ],
+      "valores": [
+        4617.59
+      ]
+    },
+    {
+      "id": "DOC-010",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0066",
+      "data": "2026-10-11",
+      "titulo": "Relato de golpe - Ravi Rocha",
+      "texto": "Anunciei um celular na internet e o suposto comprador, que usava o telefone 77982329832, me convenceu a fazer um Pix de R$ 3.661,53 como 'taxa de verificação'. O dinheiro foi para Dom Vasconcelos (conta 0162).",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Dom Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "77982329832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0066",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 3661.53,
+          "data": "2026-10-11",
+          "doc": "DOC-010"
+        }
+      ],
+      "valores": [
+        3661.53
+      ]
+    },
+    {
+      "id": "DOC-011",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0032",
+      "data": "2026-10-11",
+      "titulo": "Relato de golpe - Maria Clara Siqueira",
+      "texto": "Anunciei um celular na internet e o suposto comprador, que usava o telefone +55 77 98232 9832, me convenceu a fazer um Pix de R$ 2.047,85 como 'taxa de verificação'. O dinheiro foi para Dom Vasconcelos (CT-0162).",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Dom Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "+55 77 98232 9832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0032",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 2047.85,
+          "data": "2026-10-11",
+          "doc": "DOC-011"
+        }
+      ],
+      "valores": [
+        2047.85
+      ]
+    },
+    {
+      "id": "DOC-012",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0050",
+      "data": "2026-10-11",
+      "titulo": "Relato de golpe - Leandro Machado",
+      "texto": "Anunciei um celular na internet e o suposto comprador, que usava o telefone 77 982329832, me convenceu a fazer um Pix de R$ 4.055,15 como 'taxa de verificação'. O dinheiro foi para D. Vasconcelos (CT0162).",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "D. Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 0.95,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "77 982329832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0050",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 4055.15,
+          "data": "2026-10-11",
+          "doc": "DOC-012"
+        }
+      ],
+      "valores": [
+        4055.15
+      ]
+    },
+    {
+      "id": "DOC-013",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0008",
+      "data": "2026-10-11",
+      "titulo": "Relato de golpe - Dra. Raquel Cassiano",
+      "texto": "Recebi uma ligação do número 77982329832 de uma pessoa dizendo ser da central de segurança do banco. Ela falou que minha conta tinha sido invadida e que eu precisava transferir o saldo para uma conta segura. Fiz um Pix de R$ 2.899,36 para a CT-0162, em nome de Dom Vasconcelos. Depois percebi que era golpe.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Dom Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "77982329832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0008",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 2899.36,
+          "data": "2026-10-11",
+          "doc": "DOC-013"
+        }
+      ],
+      "valores": [
+        2899.36
+      ]
+    },
+    {
+      "id": "DOC-014",
+      "tipo": "Contestação Pix (MED)",
+      "autor_cliente_id": "CLI-0138",
+      "data": "2026-10-11",
+      "titulo": "Relato de golpe - Theodoro da Rocha",
+      "texto": "Caí no golpe do falso funcionário. O contato veio pelo WhatsApp (77) 98232-9832. Me pediram um Pix de R$ 4.497,16 para regularizar meu cadastro e o recebedor apareceu como Dom Vasconcelos, CT0162. Peço a devolução pelo MED.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Dom Vasconcelos",
+          "id": "CLI-0162",
+          "canonico": "Dom Vasconcelos",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0162",
+          "id": "CT-0162",
+          "canonico": "CT-0162",
+          "score": 1.0,
+          "papel": "recebedor_golpe"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "(77) 98232-9832",
+          "id": "TEL-0161",
+          "canonico": "77982329832",
+          "score": 1.0,
+          "papel": "contato_golpista"
+        }
+      ],
+      "relacoes": [
+        {
+          "origem": "CLI-0138",
+          "tipo": "RELATOU_GOLPE",
+          "destino": "CT-0162",
+          "valor": 4497.16,
+          "data": "2026-10-11",
+          "doc": "DOC-014"
+        }
+      ],
+      "valores": [
+        4497.16
+      ]
+    },
+    {
+      "id": "DOC-015",
+      "tipo": "Nota de analista",
+      "autor_cliente_id": "",
+      "data": "2026-10-15",
+      "titulo": "Movimentação atípica abaixo do limite",
+      "texto": "A cliente Stella Teixeira fez seis transferências seguidas entre R$ 9.100 e R$ 9.950 para Liam Casa Grande (conta nº 0161) em 14/10. Os valores ficam sempre logo abaixo do nosso limite interno de alerta. Recomendo acompanhar.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Stella Teixeira",
+          "id": "CLI-0165",
+          "canonico": "Stella Teixeira",
+          "score": 1.0,
+          "papel": "mencionado"
+        },
+        {
+          "tipo": "Cliente",
+          "texto": "Liam Casa Grande",
+          "id": "CLI-0161",
+          "canonico": "Liam Casa Grande",
+          "score": 1.0,
+          "papel": "mencionado"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0161",
+          "id": "CT-0161",
+          "canonico": "CT-0161",
+          "score": 1.0,
+          "papel": "mencionado"
+        }
+      ],
+      "relacoes": [],
+      "valores": [
+        9100.0,
+        9950.0
+      ]
+    },
+    {
+      "id": "DOC-016",
+      "tipo": "Nota de analista",
+      "autor_cliente_id": "",
+      "data": "2026-10-22",
+      "titulo": "Contas novas com valores altos",
+      "texto": "Duas contas abertas em agosto (conta 0163 e CT0164) já movimentaram mais de R$ 45 mil cada em um único dia. Titulares: Luiz Henrique Barros e BENÍCIO CAVALCANTI. Nenhuma renda compatível foi declarada.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Luiz Henrique Barros",
+          "id": "CLI-0163",
+          "canonico": "Luiz Henrique Barros",
+          "score": 1.0,
+          "papel": "mencionado"
+        },
+        {
+          "tipo": "Cliente",
+          "texto": "BENÍCIO CAVALCANTI",
+          "id": "CLI-0164",
+          "canonico": "Benício Cavalcanti",
+          "score": 1.0,
+          "papel": "mencionado"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0163",
+          "id": "CT-0163",
+          "canonico": "CT-0163",
+          "score": 1.0,
+          "papel": "mencionado"
+        },
+        {
+          "tipo": "Conta",
+          "texto": "0164",
+          "id": "CT-0164",
+          "canonico": "CT-0164",
+          "score": 1.0,
+          "papel": "mencionado"
+        }
+      ],
+      "relacoes": [],
+      "valores": [
+        45.0
+      ]
+    },
+    {
+      "id": "DOC-017",
+      "tipo": "Nota de analista",
+      "autor_cliente_id": "",
+      "data": "2026-10-27",
+      "titulo": "Transferências noturnas em sequência",
+      "texto": "Entre a noite de 25/10 e a madrugada de 26/10, Clarice Castro, T. da Costa e Arthur Gabriel Rios trocaram cerca de R$ 25 mil entre si. O contato cadastrado dos três é o mesmo: (96) 99268-6025.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Clarice Castro",
+          "id": "CLI-0167",
+          "canonico": "Clarice Castro",
+          "score": 1.0,
+          "papel": "mencionado"
+        },
+        {
+          "tipo": "Cliente",
+          "texto": "T. da Costa",
+          "id": "CLI-0168",
+          "canonico": "Thales da Costa",
+          "score": 0.95,
+          "papel": "mencionado"
+        },
+        {
+          "tipo": "Cliente",
+          "texto": "Arthur Gabriel Rios",
+          "id": "CLI-0169",
+          "canonico": "Arthur Gabriel Rios",
+          "score": 1.0,
+          "papel": "mencionado"
+        },
+        {
+          "tipo": "Telefone",
+          "texto": "(96) 99268-6025",
+          "id": "TEL-0165",
+          "canonico": "96992686025",
+          "score": 1.0,
+          "papel": "mencionado"
+        }
+      ],
+      "relacoes": [],
+      "valores": [
+        25.0
+      ]
+    },
+    {
+      "id": "DOC-018",
+      "tipo": "Reclamação",
+      "autor_cliente_id": "CLI-0119",
+      "data": "2026-10-10",
+      "titulo": "Atendimento - Dr. Benjamim Câmara",
+      "texto": "Fui cobrado duas vezes pela tarifa do pacote de serviços este mês. Gostaria do estorno.",
+      "mencoes": [],
+      "relacoes": [],
+      "valores": []
+    },
+    {
+      "id": "DOC-019",
+      "tipo": "Reclamação",
+      "autor_cliente_id": "CLI-0010",
+      "data": "2026-09-04",
+      "titulo": "Atendimento - Letícia Ribeiro",
+      "texto": "O aplicativo travou durante um Pix de R$ 830,33 para Theodoro da Rocha, mas o valor foi debitado. Confirmar se chegou.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Theodoro da Rocha",
+          "id": "CLI-0138",
+          "canonico": "Theodoro da Rocha",
+          "score": 1.0,
+          "papel": "mencionado"
+        }
+      ],
+      "relacoes": [],
+      "valores": [
+        830.33
+      ]
+    },
+    {
+      "id": "DOC-020",
+      "tipo": "Reclamação",
+      "autor_cliente_id": "CLI-0087",
+      "data": "2026-09-10",
+      "titulo": "Atendimento - Cecília Azevedo",
+      "texto": "Meu cartão novo ainda não chegou. Já se passaram 15 dias úteis.",
+      "mencoes": [],
+      "relacoes": [],
+      "valores": []
+    },
+    {
+      "id": "DOC-021",
+      "tipo": "Reclamação",
+      "autor_cliente_id": "CLI-0107",
+      "data": "2026-10-04",
+      "titulo": "Atendimento - Eduarda Azevedo",
+      "texto": "Fiz um Pix de R$ 283,47 para Ana Clara Nunes por engano, digitei a chave errada. Como peço a devolução?",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Ana Clara Nunes",
+          "id": "CLI-0078",
+          "canonico": "Ana Clara Nunes",
+          "score": 1.0,
+          "papel": "mencionado"
+        }
+      ],
+      "relacoes": [],
+      "valores": [
+        283.47
+      ]
+    },
+    {
+      "id": "DOC-022",
+      "tipo": "Reclamação",
+      "autor_cliente_id": "CLI-0103",
+      "data": "2026-10-01",
+      "titulo": "Atendimento - Maria Eduarda Cirino",
+      "texto": "Não consigo cadastrar minha chave Pix pelo celular. Aparece erro de validação.",
+      "mencoes": [],
+      "relacoes": [],
+      "valores": []
+    },
+    {
+      "id": "DOC-023",
+      "tipo": "Reclamação",
+      "autor_cliente_id": "CLI-0127",
+      "data": "2026-09-29",
+      "titulo": "Atendimento - Ana Melo",
+      "texto": "Fui cobrado duas vezes pela tarifa do pacote de serviços este mês. Gostaria do estorno.",
+      "mencoes": [],
+      "relacoes": [],
+      "valores": []
+    },
+    {
+      "id": "DOC-024",
+      "tipo": "Reclamação",
+      "autor_cliente_id": "CLI-0117",
+      "data": "2026-09-12",
+      "titulo": "Atendimento - Ana Rodrigues",
+      "texto": "O aplicativo travou durante um Pix de R$ 771,37 para José Correia, mas o valor foi debitado. Confirmar se chegou.",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "José Correia",
+          "id": "CLI-0128",
+          "canonico": "José Correia",
+          "score": 1.0,
+          "papel": "mencionado"
+        }
+      ],
+      "relacoes": [],
+      "valores": [
+        771.37
+      ]
+    },
+    {
+      "id": "DOC-025",
+      "tipo": "Reclamação",
+      "autor_cliente_id": "CLI-0096",
+      "data": "2026-09-22",
+      "titulo": "Atendimento - João Lucas Machado",
+      "texto": "Meu cartão novo ainda não chegou. Já se passaram 15 dias úteis.",
+      "mencoes": [],
+      "relacoes": [],
+      "valores": []
+    },
+    {
+      "id": "DOC-026",
+      "tipo": "Reclamação",
+      "autor_cliente_id": "CLI-0013",
+      "data": "2026-10-02",
+      "titulo": "Atendimento - Vicente Nascimento",
+      "texto": "Fiz um Pix de R$ 167,92 para Ian Andrade por engano, digitei a chave errada. Como peço a devolução?",
+      "mencoes": [
+        {
+          "tipo": "Cliente",
+          "texto": "Ian Andrade",
+          "id": "CLI-0003",
+          "canonico": "Ian Andrade",
+          "score": 1.0,
+          "papel": "mencionado"
+        }
+      ],
+      "relacoes": [],
+      "valores": [
+        167.92
+      ]
+    }
+  ]
+}

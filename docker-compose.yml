@@ -1,0 +1,12 @@
+# Sobe o Neo4j 5 com o plugin GDS:  docker compose up -d
+# Navegador do Neo4j: http://localhost:7474  (usuário neo4j / senha senha12345)
+services:
+  neo4j:
+    image: neo4j:5-community
+    ports: ["7474:7474", "7687:7687"]
+    environment:
+      NEO4J_AUTH: neo4j/senha12345
+      NEO4J_PLUGINS: '["graph-data-science"]'
+    volumes: ["neo4j_dados:/data"]
+volumes:
+  neo4j_dados:

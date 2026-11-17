@@ -1,0 +1,153 @@
+id,logradouro,cidade,uf
+END-0001,"Alameda Sousa, 43",Sousa,AM
+END-0002,"Colônia Francisco Garcia, 6",Pereira Paulista,SE
+END-0003,"Esplanada de Nascimento, 82",da Mata da Prata,ES
+END-0004,"Chácara Calebe Camargo, 72",Gomes,MG
+END-0005,"Trevo de Lima, 48",Guerra da Praia,PB
+END-0006,"Colônia Ribeiro, 75",Martins do Norte,RO
+END-0007,"Avenida Lucas Garcia, 7",Viana dos Dourados,MA
+END-0008,"Feira Freitas, 82",Pimenta do Galho,AC
+END-0009,"Esplanada Luísa Novaes, 18",Barbosa,RR
+END-0010,"Estação Sousa, 46",Castro do Campo,MG
+END-0011,"Largo de Lopes, 781",da Cunha,AL
+END-0012,"Aeroporto de da Rosa, 73",Martins dos Dourados,PB
+END-0013,"Aeroporto de Sá, 7",Cavalcanti,SE
+END-0014,"Ladeira de Vargas, 573",Barbosa de Silva,MA
+END-0015,"Estação Carlos Eduardo da Luz, 45",Duarte de Fernandes,SP
+END-0016,"Viaduto Ester Azevedo, 750",Caldeira de Lopes,MS
+END-0017,"Loteamento Alana Peixoto, 18",Barros,ES
+END-0018,"Setor Teixeira, 43",da Mota de Silveira,RJ
+END-0019,"Condomínio Davi Lucca Guerra, 11",Cassiano,SE
+END-0020,"Campo Araújo, 54",Campos de Martins,RR
+END-0021,"Trecho Lopes, 81",Jesus Alegre,MT
+END-0022,"Sítio João da Paz, 27",Pires,RN
+END-0023,"Ladeira de Abreu, 84",Machado,PI
+END-0024,"Colônia Sara Marques, 3",Rezende Grande,AP
+END-0025,Largo Vieira,da Rocha,MS
+END-0026,Morro Ana Clara Porto,Sales Paulista,PB
+END-0027,"Fazenda Mateus Pinto, 22",das Neves,SE
+END-0028,Fazenda Rocha,Novais da Praia,AP
+END-0029,"Colônia da Costa, 826",Rios da Prata,PA
+END-0030,Favela de Ramos,Aragão,SE
+END-0031,"Rua Ian Souza, 8",Vasconcelos de Fonseca,PE
+END-0032,"Lago de Marques, 296",Rezende,RS
+END-0033,"Pátio Fogaça, 50",Fogaça do Campo,RJ
+END-0034,"Travessa Ribeiro, 31",Borges,SC
+END-0035,"Lagoa de Aparecida, 16",Costela,MA
+END-0036,"Pátio de da Rocha, 7",Duarte,CE
+END-0037,"Distrito da Cunha, 32",Cavalcanti,SP
+END-0038,"Sítio de Vieira, 8",Duarte,RN
+END-0039,"Parque de da Paz, 39",Barros Verde,RO
+END-0040,"Vale João Peixoto, 32",Sales,SP
+END-0041,"Trevo Carvalho, 80",Novaes do Campo,RR
+END-0042,"Conjunto Andrade, 37",Machado de Pimenta,AC
+END-0043,"Aeroporto Clarice da Costa, 262",Azevedo do Galho,PI
+END-0044,"Conjunto Azevedo, 50",Aparecida,SE
+END-0045,"Praça Barros, 39",Duarte do Campo,AP
+END-0046,Campo da Costa,Fonseca das Flores,RJ
+END-0047,"Conjunto Barbosa, 82",Rodrigues,MT
+END-0048,"Campo de Cardoso, 81",Rodrigues de Moreira,MS
+END-0049,"Chácara de Montenegro, 39",Ribeiro,RN
+END-0050,"Pátio Maria Sophia Martins, 35",Silva Alegre,SC
+END-0051,"Residencial Moraes, 57",Almeida de Borges,MG
+END-0052,"Praia de Teixeira, 249",Brito,MG
+END-0053,Vila de Camargo,Almeida,PB
+END-0054,"Estrada Thales da Mota, 543",Santos do Oeste,RR
+END-0055,"Viaduto Moura, 13",Jesus,MT
+END-0056,"Residencial Marcelo Souza, 10",Nunes do Campo,MT
+END-0057,"Estação Carvalho, 45",da Luz,MG
+END-0058,"Trevo Evelyn Leão, 478",Rodrigues,SP
+END-0059,"Avenida de Novais, 14",da Cunha do Sul,SC
+END-0060,"Condomínio Luiz Henrique Nascimento, 38",Abreu,SP
+END-0061,"Viela de Santos, 4",Guerra,PB
+END-0062,Via Giovanna Viana,Sampaio das Pedras,PA
+END-0063,"Estrada Teixeira, 883",Farias,MA
+END-0064,"Largo Júlia Aparecida, 132",Novaes Verde,RJ
+END-0065,"Avenida de Teixeira, 7",Pires,ES
+END-0066,"Feira Correia, 684",Vieira das Flores,AP
+END-0067,"Vila Nunes, 14",Rodrigues,GO
+END-0068,"Loteamento Pereira, 696",Porto,GO
+END-0069,"Ladeira Gustavo Cardoso, 3",Machado da Prata,PI
+END-0070,"Esplanada Lopes, 56",Viana de Barbosa,MS
+END-0071,"Largo Ana Sousa, 49",Garcia Paulista,TO
+END-0072,"Núcleo Sampaio, 291",Ribeiro,RO
+END-0073,"Condomínio Siqueira, 55",Marques do Oeste,PE
+END-0074,Vale de Costa,Pastor de Lima,MG
+END-0075,"Chácara de Rocha, 25",das Neves,AM
+END-0076,"Parque Novais, 876",Santos dos Dourados,PR
+END-0077,"Praça Caldeira, 14",da Luz de Ferreira,TO
+END-0078,"Avenida Yuri Rezende, 42",Silva,MT
+END-0079,"Setor Gonçalves, 46",da Mata de Duarte,TO
+END-0080,"Núcleo Rios, 70",Silveira de Goiás,PA
+END-0081,"Alameda de Ribeiro, 93",Souza,MG
+END-0082,"Área Araújo, 58",Lima das Flores,AP
+END-0083,Conjunto Sampaio,Castro,PR
+END-0084,"Quadra da Paz, 25",Albuquerque de Freitas,DF
+END-0085,"Ladeira de Borges, 4",Sampaio da Praia,PB
+END-0086,"Esplanada Machado, 75",Nascimento,MS
+END-0087,"Sítio de da Cruz, 8",Vieira,BA
+END-0088,"Passarela de Monteiro, 7",Cavalcanti da Praia,DF
+END-0089,"Morro de Mendes, 975",Gomes Paulista,CE
+END-0090,"Trecho Dias, 19",Nunes Verde,BA
+END-0091,"Rua Fonseca, 6",Pastor do Campo,MT
+END-0092,"Avenida Gomes, 36",Monteiro das Flores,MS
+END-0093,"Esplanada Cauê Brito, 43",Sampaio da Prata,SC
+END-0094,"Lagoa Viana, 87",Borges da Prata,MG
+END-0095,"Estrada Juan Peixoto, 25",Gomes,PI
+END-0096,"Recanto de Andrade, 74",Pinto,RN
+END-0097,"Chácara de Correia, 73",Teixeira de Moreira,MS
+END-0098,"Praia de Cavalcanti, 99",Ferreira da Serra,TO
+END-0099,"Via de da Mota, 66",da Cunha de Cunha,PB
+END-0100,Passarela de Ribeiro,Rodrigues Grande,SC
+END-0101,"Via Felipe Câmara, 53",Viana Alegre,MS
+END-0102,"Residencial Farias, 15",Machado,GO
+END-0103,"Favela Siqueira, 9",Campos,MS
+END-0104,"Rodovia Silveira, 214",Monteiro,DF
+END-0105,"Avenida Guilherme Cavalcanti, 5",Rocha Alegre,PA
+END-0106,"Colônia Leão, 879",Pimenta,MG
+END-0107,"Feira de Mendes, 36",Albuquerque,RS
+END-0108,"Aeroporto de Borges, 994",Rezende,RO
+END-0109,Vale Matteo Correia,Gonçalves,DF
+END-0110,Viaduto Aurora Montenegro,Leão de Goiás,GO
+END-0111,"Sítio Maria Luiza Pacheco, 568",Albuquerque do Galho,AM
+END-0112,"Avenida de Garcia, 66",Albuquerque,SC
+END-0113,"Área Cassiano, 19",Mendonça Verde,PI
+END-0114,"Via Pimenta, 630",Vieira do Campo,MG
+END-0115,"Viela Cassiano, 8",Andrade de Minas,AP
+END-0116,"Chácara de das Neves, 45",Ramos do Galho,BA
+END-0117,"Loteamento Ana Laura Sales, 629",Lima da Serra,AC
+END-0118,"Vereda de Alves, 496",Novaes,GO
+END-0119,"Recanto de Fogaça, 4",da Conceição de Azevedo,GO
+END-0120,"Passarela de Fogaça, 87",Montenegro,BA
+END-0121,"Avenida Cavalcante, 92",Peixoto Verde,RS
+END-0122,"Alameda Costa, 386",Cavalcanti,PR
+END-0123,"Jardim Mendes, 51",da Cunha do Oeste,AC
+END-0124,"Sítio Maria Sophia da Cunha, 69",Sousa Grande,RO
+END-0125,"Via de Moreira, 19",Porto,PR
+END-0126,"Fazenda Mathias Marques, 19",Cavalcanti das Pedras,PE
+END-0127,"Fazenda de Dias, 95",Sampaio,TO
+END-0128,Viaduto de Monteiro,Teixeira,PI
+END-0129,"Quadra de Dias, 1",Garcia,RJ
+END-0130,"Loteamento de da Luz, 95",Ferreira do Sul,PA
+END-0131,"Largo Ana Santos, 79",Macedo da Praia,SC
+END-0132,"Feira Sousa, 37",Moura,TO
+END-0133,"Pátio Vicente Cassiano, 10",Ferreira,MA
+END-0134,"Setor de da Mata, 23",Carvalho,MA
+END-0135,"Viela Ana Lívia Duarte, 90",da Cunha,PR
+END-0136,"Avenida de Araújo, 92",Cardoso,PR
+END-0137,"Aeroporto Natália Garcia, 60",Duarte,SC
+END-0138,"Viaduto Mariana Moura, 194",Câmara de Minas,AC
+END-0139,"Vereda de Cavalcanti, 286",Rocha dos Dourados,RR
+END-0140,"Núcleo Marcela Machado, 10",Peixoto do Sul,PE
+END-0141,"Campo Silveira, 37",Sales de Sampaio,RJ
+END-0142,"Largo Montenegro, 12",Machado Verde,PE
+END-0143,"Feira Barbosa, 66",Camargo,RO
+END-0144,Vale Casa Grande,Albuquerque Alegre,RR
+END-0145,"Vale de da Mata, 8",Azevedo,MG
+END-0146,"Esplanada Arthur Miguel Ferreira, 55",Montenegro,GO
+END-0147,"Rua de Carvalho, 32",São Paulo,MT
+END-0148,"Praia Marques, 4",Sousa do Norte,PI
+END-0149,"Vila de Nogueira, 76",Machado do Sul,CE
+END-0150,"Estação Vargas, 7",das Neves dos Dourados,MA
+END-0151,"Viaduto de Melo, 86",Peixoto,RN
+END-0152,"Lagoa de Farias, 1",Leão,CE
